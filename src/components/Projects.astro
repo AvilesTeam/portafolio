@@ -1,39 +1,57 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Python from "./icons/Python.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import Angular from "./icons/Angular.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#3776ab] text-white",
+    icon: Python,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#f7df1e] text-black",
+    icon: JavaScript,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#3178c6] text-white",
+    icon: TypeScript,
+  },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-[#dd0031] text-white",
+    icon: Angular,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Dashboard Estudiante - Plataforma de gestión académica",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Aplicación web para la gestión académica de estudiantes, facilitando el acceso a calificaciones, horarios y recursos educativos. Desarrollada con Python y JavaScript, con un enfoque en usabilidad y eficiencia.",
+    link: "https://dashboard-estudiante.onrender.com/",
+    github: "https://github.com/AvilesTeam/dashboard-estudiante",
+    image: "assets/dasboard_estudent.jpeg",
+    tags: [
+      TAGS.PYTHON,
+      TAGS.JAVASCRIPT,
+    ],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "LoginBarber - Plataforma para gestión de citas en barberías",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Plataforma web diseñada para la gestión eficiente de citas en barberías. Permite a los usuarios reservar horarios, gestionar perfiles y recibir notificaciones. Construida con Typescript, Angular y Ionic, enfocada en una experiencia de usuario intuitiva y moderna.",
+    link: "https://github.com/AvilesTeam/barbershop-app",
+    image: "assets/foto_loginbarber.PNG",
+    tags: [
+      TAGS.TYPESCRIPT,
+      TAGS.ANGULAR,
+    ],
   },
 ]
 ---
